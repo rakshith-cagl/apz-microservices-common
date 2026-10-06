@@ -1,0 +1,33 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*"
+  },
+  "requestDef": {
+    "NGOExecuteAPIBDO": {
+      "inputData": {
+        "NGOConnectCabinet_Input": {
+          "UserName": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.UserName}",
+          "CabinetName": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.CabinetName}",
+          "UserPassword": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.UserPassword}",
+          "Option": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.Option}",
+          "locale": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.locale}",
+          "UserExist": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOConnectCabinet_Input.UserExist}"
+        }
+      },
+      "base64Encoded": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.base64Encoded}",
+      "locale": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.locale}"
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "applicantID": "${REQUEST~apiRequest.applicantID}",
+    "applicantName": "${REQUEST~apiRequest.applicantName}",
+    "dob": "${REQUEST~apiRequest.dob}",
+    "primaryID": "${REQUEST~apiRequest.primaryID}",
+    "branchID": "${REQUEST~apiRequest.branchID}",
+    "branchName": "${REQUEST~apiRequest.branchName}",
+    "customerID": "${REQUEST~apiRequest.customerID}",
+    "groupID": "${REQUEST~apiRequest.groupID}",
+    "kendraID": "${REQUEST~apiRequest.kendraID}",
+    "kendraName": "${REQUEST~apiRequest.kendraName}",
+    "product": "${REQUEST~apiRequest.product}",
+    "customerType": "${REQUEST~apiRequest.customerType}",
+    "reason": "${REQUEST~apiRequest.reason}",
+    "uploadedBy": "${REQUEST~apiRequest.uploadedBy}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

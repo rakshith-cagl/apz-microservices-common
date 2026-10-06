@@ -1,0 +1,22 @@
+{
+    "apiURL": "${URL}",
+    "servicetype": "HTTP",
+    "methodType": "POST",
+    "contentType": "application/json",
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Authorization":"Q2FnbCQyMDIzt24"
+    },
+    "requestDef": {
+        "transactionId": "${REQUEST~apiRequest.requestObj.transactionId}",
+         "status": "${REQUEST~apiRequest.requestObj.status}"
+    },
+    "responseDef": "",
+    "logging": {
+      "logRequired": "Y",
+      "logType": "BOTH",
+	  "externalAPILogRequired":"N",
+	  "externalAPILogType":"NONE"
+    }
+  }

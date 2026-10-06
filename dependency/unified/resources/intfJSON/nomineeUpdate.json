@@ -1,0 +1,33 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+	"Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I=",
+  },
+  "requestDef": {
+    "memRelation": "${REQUEST~apiRequest.requestObj.memRelation}",
+    "custid": "${REQUEST~apiRequest.requestObj.customer_id}",
+    "applicationId": "${REQUEST~apiRequest.requestObj.applicationId}",
+    "legaldocId": "${REQUEST~apiRequest.requestObj.legaldocId}",
+    "dob": "${REQUEST~apiRequest.requestObj.dob}",
+    "legaldocName": "${REQUEST~apiRequest.requestObj.legaldocName}",
+    "mobileNum": "${REQUEST~apiRequest.requestObj.mobileNum}",
+    "gender": "${REQUEST~apiRequest.requestObj.gender}",
+    "docuNoF": "${REQUEST~apiRequest.requestObj.docuNoF}",
+    "docuNoB": "${REQUEST~apiRequest.requestObj.docuNoB}",
+    "createdAt": "${REQUEST~apiRequest.requestObj.create_ts}",
+    "status": "${REQUEST~apiRequest.requestObj.application_status}",
+	"nomineeName": "${REQUEST~apiRequest.requestObj.name}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "N",
+    "externalAPILogType": "NONE"
+  }
+}

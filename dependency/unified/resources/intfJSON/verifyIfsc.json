@@ -1,0 +1,21 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "GET",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "ifsc": "${REQUEST~apiRequest.ifscCode}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

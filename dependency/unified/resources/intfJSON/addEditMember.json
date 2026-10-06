@@ -1,0 +1,122 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "PUT",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "body": [
+      {
+        "fatherName": "${REQUEST~apiRequest.requestObj.fatherName}",
+        "spName": "${REQUEST~apiRequest.requestObj.spName}",
+        "joiningCbReportLink": "${REQUEST~apiRequest.requestObj.joiningCbReportLink}",
+        "contactDate": "${REQUEST~apiRequest.requestObj.contactDate}",
+        "agriLandDry": "${REQUEST~apiRequest.requestObj.agriLandDry}",
+        "groupId": "${REQUEST~apiRequest.requestObj.groupId}",
+        "noOfAdults": "${REQUEST~apiRequest.requestObj.noOfAdults}",
+        "state1": "${REQUEST~apiRequest.requestObj.state1}",
+        "recordId": "${REQUEST~apiRequest.requestObj.recordId}",
+        "bankACNo": "${REQUEST~apiRequest.requestObj.bankACNo}",
+        "state": "${REQUEST~apiRequest.requestObj.state}",
+        "sector": "${REQUEST~apiRequest.requestObj.sector}",
+        "bankifsccode": "${REQUEST~apiRequest.requestObj.bankifsccode}",
+        "longitude": "${REQUEST~apiRequest.requestObj.longitude}",
+        "districtId1": "${REQUEST~apiRequest.requestObj.districtId1}",
+        "resident": "${REQUEST~apiRequest.requestObj.resident}",
+        "landHolding": "${REQUEST~apiRequest.requestObj.landHolding}",
+        "branchId": "${REQUEST~apiRequest.requestObj.branchId}",
+        "caste": "${REQUEST~apiRequest.requestObj.caste}",
+        "village1": "${REQUEST~apiRequest.requestObj.village1}",
+        "noOfChildren": "${REQUEST~apiRequest.requestObj.noOfChildren}",
+        "taluk1": "${REQUEST~apiRequest.requestObj.taluk1}",
+        "curAddress1": "${REQUEST~apiRequest.requestObj.curAddress1}",
+        "customerName": "${REQUEST~apiRequest.requestObj.customerName}",
+        "totalIncome": "${REQUEST~apiRequest.requestObj.totalIncome}",
+        "nomineeIfscCode": "${REQUEST~apiRequest.requestObj.nomineeIfscCode}",
+        "phone": "${REQUEST~apiRequest.requestObj.phone}",
+        "dob": "${REQUEST~apiRequest.requestObj.dob}",
+        "pinCode": "${REQUEST~apiRequest.requestObj.pinCode}",
+        "name": "${REQUEST~apiRequest.requestObj.name}",
+        "joiningCbSummary": "${REQUEST~apiRequest.requestObj.joiningCbSummary}",
+        "joiningDateofEnquiry": "${REQUEST~apiRequest.requestObj.joiningDateofEnquiry}",
+        "legalDocument~@JSONARRAY@": [
+          {
+            "date": "${REQUEST~apiRequest.requestObj.legalDocument[].date}",
+            "legalExpDate": "${REQUEST~apiRequest.requestObj.legalDocument[].legalExpDate}",
+            "name": "${REQUEST~apiRequest.requestObj.legalDocument[].name}",
+            "id": "${REQUEST~apiRequest.requestObj.legalDocument[].id}"
+          }
+        ],
+        "maritalStatus": "${REQUEST~apiRequest.requestObj.maritalStatus}",
+        "status": "${REQUEST~apiRequest.requestObj.status}",
+        "customerQualify": "${REQUEST~apiRequest.requestObj.customerQualify}",
+        "gender": "${REQUEST~apiRequest.requestObj.gender}",
+        "pinCode1": "${REQUEST~apiRequest.requestObj.pinCode1}",
+        "secondaryMobileNumber": "${REQUEST~apiRequest.requestObj.secondaryMobileNumber}",
+        "latitude": "${REQUEST~apiRequest.requestObj.latitude}",
+        "bankName": "${REQUEST~apiRequest.requestObj.bankName[]}",
+        "mobAppId": "${REQUEST~apiRequest.requestObj.mobAppId}",
+        "mobileNumberVal": "${REQUEST~apiRequest.requestObj.mobileNumberVal}",
+        "accountHolderName": "${REQUEST~apiRequest.requestObj.accountHolderName[]}",
+        "presentAddress~@JSONARRAY@": [
+          {
+            "permanentAddressLine": "${REQUEST~apiRequest.requestObj.presentAddress[].permanentAddressLine}"
+          }
+        ],
+        "cbDate": "${REQUEST~apiRequest.requestObj.cbDate}",
+        "custId": "${REQUEST~apiRequest.requestObj.custId}",
+        "member": "${REQUEST~apiRequest.requestObj.member}",
+        "nominee~@JSONARRAY@": [
+          {
+            "name": "${REQUEST~apiRequest.requestObj.nominee[].name}"
+          }
+        ],
+        "village": "${REQUEST~apiRequest.requestObj.village}",
+        "ifscCode": "${REQUEST~apiRequest.requestObj.ifscCode}",
+        "spouseDob": "${REQUEST~apiRequest.requestObj.spouseDob}",
+        "spouseKyc~@JSONARRAY@": [
+          {
+            "name": "${REQUEST~apiRequest.requestObj.spouseKyc[].name}",
+            "id": "${REQUEST~apiRequest.requestObj.spouseKyc[].id}"
+          }
+        ],
+        "nominalForm": "${REQUEST~apiRequest.requestObj.nominalForm}",
+        "address": "${REQUEST~apiRequest.requestObj.address}",
+        "kendraId": "${REQUEST~apiRequest.requestObj.kendraId}",
+        "spouseDocument": "${REQUEST~apiRequest.requestObj.spouseDocument}",
+        "taluk": "${REQUEST~apiRequest.requestObj.taluk}",
+        "commAddrSameAsPresentAddr": "${REQUEST~apiRequest.requestObj.commAddrSameAsPresentAddr}",
+        "recordType": "${REQUEST~apiRequest.requestObj.recordType}",
+        "branchName": "${REQUEST~apiRequest.requestObj.branchName}",
+        "dateOfBirth": "${REQUEST~apiRequest.requestObj.dateOfBirth}",
+        "customerlanguage": "${REQUEST~apiRequest.requestObj.customerlanguage}",
+        "accountNumber": "${REQUEST~apiRequest.requestObj.accountNumber}",
+        "religion": "${REQUEST~apiRequest.requestObj.religion}",
+        "currentAddress": "${REQUEST~apiRequest.requestObj.currentAddress}",
+        "valSource": "${REQUEST~apiRequest.requestObj.valSource}",
+        "districtId": "${REQUEST~apiRequest.requestObj.districtId}",
+        "communicationAddress~@JSONARRAY@": [
+          {
+            "address": "${REQUEST~apiRequest.requestObj.communicationAddress[].address}"
+          }
+        ],
+        "totalFamilyMembers": "${REQUEST~apiRequest.requestObj.totalFamilyMembers}",
+        "joiningCbStatus": "${REQUEST~apiRequest.requestObj.joiningCbStatus}",
+        "middleName": "${REQUEST~apiRequest.requestObj.middleName}",
+        "agriLandWet": "${REQUEST~apiRequest.requestObj.agriLandWet}",
+        "firstAcOfficer": "${REQUEST~apiRequest.requestObj.firstAcOfficer}"
+      }
+    ]
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

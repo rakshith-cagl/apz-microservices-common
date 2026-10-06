@@ -1,0 +1,39 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*"
+  },
+  "requestDef": {
+    "NGOExecuteAPIBDO": {
+      "inputData": {
+        "NGOAddFolder_Input": {
+          "UserDBId": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.UserDBId}",
+          "CabinetName": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.CabinetName}",
+          "Option": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Option}",
+          "Folder": {
+            "Comment": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.Comment}",
+            "Owner": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.Owner}",
+            "CreationDateTime": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.CreationDateTime}",
+            "ImageVolumeIndex": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.ImageVolumeIndex}",
+            "ParentFolderIndex": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.ParentFolderIndex}",
+            "FolderName": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.FolderName}",
+            "AccessType": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.AccessType}",
+            "FolderType": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.FolderType}",
+            "Location": "${REQUEST~apiRequest.requestObj.NGOExecuteAPIBDO.inputData.NGOAddFolder_Input.Folder.Location}"
+          }
+        }
+      }
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "trnTimestamp": "{CUSTOMJAVACODE~generateTrnTimestamp}",
+    "deviceIMEI": "{REQUEST~apiRequest.requestObj.customerId}",
+    "superMerchantId": "759",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "amount": "${REQUEST~apiRequest.requestObj.amount}",
+    "billNumber": "${REQUEST~apiRequest.requestObj.billNumber}",
+    "languageCode": "${CONST~en}",
+    "requestedRemarks": "${REQUEST~apiRequest.requestObj.remarks}",
+    "mobileNumber": "${REQUEST~apiRequest.requestObj.mobileNumber}",
+    "customerTransactionId": "${REQUEST~apiRequest.requestObj.customerTxnId}",
+    "branchId": "${REQUEST~apiRequest.requestObj.formattedBranchId}",
+    "param1": "${REQUEST~apiRequest.userId}",
+    "param2": "${REQUEST~apiRequest.requestObj.userName}",
+    "txnIntSource": "${CONST~Maitri}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

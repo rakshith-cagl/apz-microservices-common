@@ -1,0 +1,29 @@
+  {
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Authorization": "{REQUEST~apiRequest.authToken}",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "imageUrl": "${REQUEST~apiRequest.imageUrl}",
+    "clientRefId": "${REQUEST~apiRequest.clientRefId}",
+    "maskAadhaarNumber": "${REQUEST~apiRequest.maskAadhaarNumber}",
+    "outputmaskedAadhaar": "${REQUEST~apiRequest.outputmaskedAadhaar}",
+    "returnMaskedImageAsBase": "${REQUEST~apiRequest.returnMaskedImageAsBase}",
+    "isBlackWhiteCheck": "${REQUEST~apiRequest.isBlackWhiteCheck}"
+  },
+"responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "N",
+    "externalAPILogType": "NONE"
+  }
+}
+  

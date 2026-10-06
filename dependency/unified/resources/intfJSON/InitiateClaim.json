@@ -1,0 +1,36 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+	"claimRequest~@JSONARRAY@": [
+    {
+    "memberId":"${REQUEST~apiRequest.requestObj.claimRequest[].memberId}",
+    "deceasedPerson":"${REQUEST~apiRequest.requestObj.claimRequest[].deceasedPerson}",
+    "deceasedDeathDate":"${REQUEST~apiRequest.requestObj.claimRequest[].deceasedDeathDate}",
+    "deceasedDeathCause":"${REQUEST~apiRequest.requestObj.claimRequest[].deceasedDeathCause}",
+	"userId":"${REQUEST~apiRequest.requestObj.claimRequest[].userId}",
+	"branchId":"${REQUEST~apiRequest.requestObj.claimRequest[].branchId}",
+	"comment":"${REQUEST~apiRequest.requestObj.claimRequest[].comment}",
+	"kMContactNumber":"${REQUEST~apiRequest.requestObj.claimRequest[].kmContactNumber}",
+	"familyMemeberName":"${REQUEST~apiRequest.requestObj.claimRequest[].familyMemeberName}",
+	"familyMemeberRelation":"${REQUEST~apiRequest.requestObj.claimRequest[].familyMemeberRelation}",
+	"familyMemeberContactNo":"${REQUEST~apiRequest.requestObj.claimRequest[].familyMemeberContactNo}"
+    }
+   ]
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "N",
+    "logType": "NONE",
+	  "externalAPILogRequired":"Y",
+	  "externalAPILogType":"BOTH"
+  },
+  "timeout":"120"
+}

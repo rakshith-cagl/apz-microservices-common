@@ -1,0 +1,27 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*"
+  },
+  "requestDef": {
+    "apiRequest": {
+      "appId": "${REQUEST~apiRequest.appId}",
+      "userId": "${REQUEST~apiRequest.userId}",
+      "interfaceName": "${REQUEST~apiRequest.interfaceName}",
+      "requestObj": {
+        "customerId": "${REQUEST~apiRequest.requestObj.customerId}"
+      }
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "N",
+    "externalAPILogType": "NONE"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "PUT",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I=",
+    "companyId": "${REQUEST~apiRequest.requestObj.branchId}"
+  },
+  "requestDef": {
+    "method": "${CONST~customerOnboarding.addEditKendra}",
+    "header": {},
+    "body": {
+      "distance": "${REQUEST~apiRequest.requestObj.distance}",
+      "gps_longitude": "${REQUEST~apiRequest.requestObj.gpsLongitude}",
+      "kendraName": "${REQUEST~apiRequest.requestObj.kendraName}",
+      "firstMeetingDate": "${REQUEST~apiRequest.requestObj.firstMeetingDate}",
+      "projectionMeetingDate": "${REQUEST~apiRequest.requestObj.projectionMeetingDate}",
+      "recordId": "${REQUEST~apiRequest.requestObj.recordId}",
+      "searchId": "${REQUEST~apiRequest.requestObj.searchId}",
+      "areaType": "${REQUEST~apiRequest.requestObj.areaType}",
+      "villageType": "${REQUEST~apiRequest.requestObj.villageType}",
+      "KendraAddress~@JSONARRAY@": "${REQUEST~apiRequest.requestObj.kendraAddress}",
+      "village": "${REQUEST~apiRequest.requestObj.village}",
+      "meetingFrequency": "${REQUEST~apiRequest.requestObj.meetingFrequency}",
+      "branchId": "${REQUEST~apiRequest.requestObj.branchId}",
+      "kendraId": "${REQUEST~apiRequest.requestObj.kendraId}",
+      "surveyDate": "${REQUEST~apiRequest.requestObj.surveyDate}",
+      "taluk": "${REQUEST~apiRequest.requestObj.taluk}",
+      "recordType": "${REQUEST~apiRequest.requestObj.recordType}",
+      "stateId": "${REQUEST~apiRequest.requestObj.stateId}",
+      "surveyOfficer": "${REQUEST~apiRequest.requestObj.surveyOfficer}",
+      "meetingTimeTo": "${REQUEST~apiRequest.requestObj.meetingTimeTo}",
+      "parentId": "${REQUEST~apiRequest.requestObj.parentId}",
+      "referenceID": "${REQUEST~apiRequest.requestObj.referenceId}",
+      "meetingTimeFrom": "${REQUEST~apiRequest.requestObj.meetingTimeFrom}",
+      "kendraManager": "${REQUEST~apiRequest.requestObj.kendraManager}",
+      "projectMeetingOfficer": "${REQUEST~apiRequest.requestObj.projectMeetingOfficer}",
+      "districtId": "${REQUEST~apiRequest.requestObj.districtId}",
+      "meetingPlace": "${REQUEST~apiRequest.requestObj.meetingPlace}",
+      "pinCode": "${REQUEST~apiRequest.requestObj.pinCode}",
+      "gps_latitude": "${REQUEST~apiRequest.requestObj.gpsLatitude}"
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

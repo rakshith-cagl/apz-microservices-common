@@ -1,0 +1,24 @@
+{
+    "apiURL": "${URL}",
+    "servicetype": "HTTP",
+    "methodType": "POST",
+    "contentType": "application/json",
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "*/*",
+      "Apikey":"Y2FsZ2xpbnRlcmZhY2Vlc2I="
+    },
+    "requestDef": {
+        "folderIndex": "${REQUEST~apiRequest.requestObj.folderIndex}",
+         "documentName": "${REQUEST~apiRequest.requestObj.documentName}",
+         "createdByAppName": "${REQUEST~apiRequest.requestObj.fileType}",
+         "file":"${REQUEST~apiRequest.requestObj.fileData}"
+    },
+    "responseDef": "",
+    "logging": {
+      "logRequired": "Y",
+      "logType": "BOTH",
+	  "externalAPILogRequired":"N",
+	  "externalAPILogType":"NONE"
+    }
+  }

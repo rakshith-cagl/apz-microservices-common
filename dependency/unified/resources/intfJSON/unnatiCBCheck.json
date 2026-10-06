@@ -1,0 +1,150 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "values": {
+      "input": {
+        "values": {
+          "input": {
+            "Coapp_Insurance_flag": "${REQUEST~apiRequest.requestObj.coappInsuranceFlag}",
+            "household_member~@JSONARRAY@": [
+              {
+                "earning_flag": "${REQUEST~apiRequest.requestObj.householdMember[].earningFlag}",
+                "address~@JSONARRAY@": [
+                  {
+                    "city": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hCity}",
+                    "addrLine1": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hAddrLine1}",
+                    "district": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hDistrict}",
+                    "pinCode": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hPinCode}",
+                    "state": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hState}",
+                    "addrType": "${REQUEST~apiRequest.requestObj.householdMember[].address[].hAddrType}"
+                  }
+                ],
+                "relationtype": "${REQUEST~apiRequest.requestObj.householdMember[].relationtype}",
+                "gender": "${REQUEST~apiRequest.requestObj.householdMember[].gender}",
+                "applicantType": "${REQUEST~apiRequest.requestObj.householdMember[].applicantType}",
+                "phone": "${REQUEST~apiRequest.requestObj.householdMember[].phone}",
+                "dob": "${REQUEST~apiRequest.requestObj.householdMember[].dob}",
+                "document~@JSONARRAY@": [
+                  {
+                    "docType": "${REQUEST~apiRequest.requestObj.householdMember[].document[].hDocType}",
+                    "docId": "${REQUEST~apiRequest.requestObj.householdMember[].document[].hDocId}"
+                  }
+                ],
+                "custName": "${REQUEST~apiRequest.requestObj.householdMember[].custName}"
+              }
+            ],
+            "App_Insurance_flag": "${REQUEST~apiRequest.requestObj.appInsuranceFlag}",
+            "App_Insurance_amt": "${REQUEST~apiRequest.requestObj.appInsuranceAmt}",
+            "business_image_assessment": "${REQUEST~apiRequest.requestObj.businessImageAssessment}",
+            "Joint_Insurance_flag": "${REQUEST~apiRequest.requestObj.jointInsuranceFlag}",
+            "Coapp_flag": "${REQUEST~apiRequest.requestObj.coappFlag}",
+            "Coapp_Insurance_amt": "${REQUEST~apiRequest.requestObj.coappInsuranceAmt}",
+            "applicant": {
+              "Q1": "${REQUEST~apiRequest.requestObj.q1}",
+              "Q2": "${REQUEST~apiRequest.requestObj.q2}",
+              "Q3": "${REQUEST~apiRequest.requestObj.q3}",
+              "Q4": "${REQUEST~apiRequest.requestObj.q4}",
+              "Q5": "${REQUEST~apiRequest.requestObj.q5}",
+              "losIndicator": "${REQUEST~apiRequest.requestObj.losIndicator}",
+              "activation_date": "${REQUEST~apiRequest.requestObj.activationDate}",
+              "Q6": "${REQUEST~apiRequest.requestObj.q6}",
+              "Q7": "${REQUEST~apiRequest.requestObj.q7}",
+              "Q8": "${REQUEST~apiRequest.requestObj.q8}",
+              "loan_product_type": "${REQUEST~apiRequest.requestObj.loanProductType}",
+              "Q9": "${REQUEST~apiRequest.requestObj.q9}",
+              "source": "${CONST~OTHERS}",
+              "Field_Assessed_Income_of_customer": "${REQUEST~apiRequest.requestObj.fieldAssessedIncomeOfCustomer}",
+              "branch": "${REQUEST~apiRequest.requestObj.branch}",
+              "appId": "${REQUEST~apiRequest.requestObj.appId}",
+              "Income_Assessment_Flag": "${REQUEST~apiRequest.requestObj.incomeAssessmentFlag}",
+              "Self_Declared_Income_of_customer": "${REQUEST~apiRequest.requestObj.selfDeclaredIncomeOfCustomer}",
+              "durationOfAgreement": "${REQUEST~apiRequest.requestObj.durationOfAgreement}",
+              "bankProductId": "${REQUEST~apiRequest.requestObj.bankProductId}",
+              "losIndex": "${REQUEST~apiRequest.requestObj.losIndex}",
+              "depName": "${REQUEST~apiRequest.requestObj.depName}",
+              "Q11": "${REQUEST~apiRequest.requestObj.q11}",
+              "Q10": "${REQUEST~apiRequest.requestObj.q10}",
+              "enquiryType": "${REQUEST~apiRequest.requestObj.enquiryType}",
+              "Q13": "${REQUEST~apiRequest.requestObj.q13}",
+              "Q12": "${REQUEST~apiRequest.requestObj.q12}",
+              "Q15": "${REQUEST~apiRequest.requestObj.q15}",
+              "phone": "${REQUEST~apiRequest.requestObj.phone}",
+              "Q14": "${REQUEST~apiRequest.requestObj.q14}",
+              "dob": "${REQUEST~apiRequest.requestObj.dob}",
+              "Q17": "${REQUEST~apiRequest.requestObj.q17}",
+              "Q16": "${REQUEST~apiRequest.requestObj.q16}",
+              "Q19": "${REQUEST~apiRequest.requestObj.q19}",
+              "Q18": "${REQUEST~apiRequest.requestObj.q18}",
+              "applied_term_weeks": "${REQUEST~apiRequest.requestObj.appliedTermWeeks}",
+              "maritalStatus": "${REQUEST~apiRequest.requestObj.maritalStatus}",
+              "loanId": "${REQUEST~apiRequest.requestObj.loanId}",
+              "hh_annual_income": "${REQUEST~apiRequest.requestObj.hhAnnualIncome}",
+              "gender": "${REQUEST~apiRequest.requestObj.gender}",
+              "loanType": "${REQUEST~apiRequest.requestObj.loanType}",
+              "document~@JSONARRAY@": [
+                {
+                  "docType": "${REQUEST~apiRequest.requestObj.document[].docType}",
+                  "docId": "${REQUEST~apiRequest.requestObj.document[].docId}"
+                }
+              ],
+              "product_code": "${REQUEST~apiRequest.requestObj.productConstCode}",
+              "kendra_activation_date": "${REQUEST~apiRequest.requestObj.kendraActivationDate}",
+              "Q20": "${REQUEST~apiRequest.requestObj.q20}",
+              "slNo": "${CONST~1}",
+              "Q22": "${REQUEST~apiRequest.requestObj.q22}",
+              "DigiAgil_DFA_Flag": "${REQUEST~apiRequest.requestObj.digiAgilDfaFlag}",
+              "earning_flag": "${REQUEST~apiRequest.requestObj.earningFlag}",
+              "Q21": "${REQUEST~apiRequest.requestObj.q21}",
+              "Q24": "${REQUEST~apiRequest.requestObj.q24}",
+              "Q23": "${REQUEST~apiRequest.requestObj.q23}",
+              "Q26": "${REQUEST~apiRequest.requestObj.q26}",
+              "applicantType": "${REQUEST~apiRequest.requestObj.applicantType}",
+              "Q25": "${REQUEST~apiRequest.requestObj.q25}",
+              "Q28": "${REQUEST~apiRequest.requestObj.q28}",
+              "Q27": "${REQUEST~apiRequest.requestObj.q27}",
+              "custId": "${REQUEST~apiRequest.requestObj.custId}",
+              "term": "${REQUEST~apiRequest.requestObj.term}",
+              "email": "${REQUEST~apiRequest.requestObj.email}",
+              "applied_frequency": "${REQUEST~apiRequest.requestObj.appliedFrequency}",
+              "address~@JSONARRAY@": [
+                {
+                  "addrType": "${REQUEST~apiRequest.requestObj.address[].addrType}",
+                  "addrLine1": "${REQUEST~apiRequest.requestObj.address[].addrLine1}",
+                  "city": "${REQUEST~apiRequest.requestObj.address[].city}",
+                  "state": "${REQUEST~apiRequest.requestObj.address[].state}",
+                  "district": "${REQUEST~apiRequest.requestObj.address[].district}",
+                  "pinCode": "${REQUEST~apiRequest.requestObj.address[].pinCode}"
+                }
+              ],
+              "kendra": "${REQUEST~apiRequest.requestObj.kendra}",
+              "custName": "${REQUEST~apiRequest.requestObj.custName}",
+              "loanAmount": "${REQUEST~apiRequest.requestObj.loanAmount}",
+              "stateBranch": "${REQUEST~apiRequest.requestObj.stateBranch}",
+              "depType": "${REQUEST~apiRequest.requestObj.depType}",
+              "productCode": "${REQUEST~apiRequest.requestObj.productCode}",
+              "categoryId": "${REQUEST~apiRequest.requestObj.categoryId}"
+            },
+            "caglOs": "${REQUEST~apiRequest.requestObj.caglOs}",
+            "Joint_Insurance_amt": "${REQUEST~apiRequest.requestObj.jointInsuranceAmt}",
+            "roi_type": "${REQUEST~apiRequest.requestObj.roiType}"
+          }
+        }
+      }
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

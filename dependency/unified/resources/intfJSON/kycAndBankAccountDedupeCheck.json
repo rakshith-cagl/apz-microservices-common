@@ -1,0 +1,27 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "key": "175d725e-73b5-11ec-9c5d-0abea36e3286"
+  },
+  "requestDef": {
+    "transId": "${REQUEST~apiRequest~transId}",
+    "msisdn": "${REQUEST~apiRequest~msisdn}",
+    "msg": "${REQUEST~apiRequest~msg}",
+    "senderId": "${REQUEST~apiRequest~senderId}",
+    "customerid": "${REQUEST~apiRequest~customerId}",
+    "customerName": "${REQUEST~apiRequest~customerName}",
+    "actiontypes": "${REQUEST~apiRequest~actionTypes}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "N",
+    "externalAPILogType": "NONE"
+  }
+}

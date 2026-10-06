@@ -1,0 +1,25 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+    "beneficiaryIFSC": "${REQUEST~apiRequest.beneficiaryIFSC}",
+    "beneficiaryMobile": "${REQUEST~apiRequest.beneficiaryMobile}",
+    "nameFuzzy": "${REQUEST~apiRequest.nameFuzzy}",
+    "beneficiaryName": "${REQUEST~apiRequest.beneficiaryName}",
+    "beneficiaryAccount": "${REQUEST~apiRequest.beneficiaryAccount}"
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+	  "externalAPILogRequired":"N",
+	  "externalAPILogType":"NONE"
+  }
+}

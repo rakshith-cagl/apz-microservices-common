@@ -1,0 +1,32 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I=",
+    "companyId": "${REQUEST~apiRequest.companyId}"
+  },
+  "requestDef": {
+    "headers": {
+      "companyId": "${REQUEST~apiRequest.companyId}"
+    },
+    "body": {
+      "customerId": "${REQUEST~apiRequest.customerId}",
+      "loanAccount": "${REQUEST~apiRequest.loanAccount}",
+      "depositAmount": "${REQUEST~apiRequest.depositAmount}",
+      "creditCurrency": "${REQUEST~apiRequest.creditCurrency}",
+      "valueDate": "${REQUEST~apiRequest.valueDate}",
+      "reason": "${REQUEST~apiRequest.reason}"
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "Y",
+    "logType": "BOTH",
+    "externalAPILogRequired": "Y",
+    "externalAPILogType": "BOTH"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "apiURL": "${URL}",
+  "servicetype": "HTTP",
+  "methodType": "POST",
+  "contentType": "application/json",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "*/*",
+    "Apikey": "Y2FsZ2xpbnRlcmZhY2Vlc2I="
+  },
+  "requestDef": {
+	"claimStatusRequest": {
+      "claimId": "${REQUEST~apiRequest.requestObj.claimStatusRequest.claimId}",
+      "memberId": "${REQUEST~apiRequest.requestObj.claimStatusRequest.memberId}",
+      "deceasedPerson": "${REQUEST~apiRequest.requestObj.claimStatusRequest.deceasedPerson}"
+    }
+  },
+  "responseDef": "",
+  "logging": {
+    "logRequired": "N",
+    "logType": "NONE",
+	  "externalAPILogRequired":"Y",
+	  "externalAPILogType":"BOTH"
+  },
+  "timeout":"120"
+}
